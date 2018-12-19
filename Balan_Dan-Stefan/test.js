@@ -1,6 +1,6 @@
 for (let i1 = 1; i1 <= 500; i1++) {
     let worker = new Worker('worker.js');
-    worker.postMessage(["100000000", i1]);
+    worker.postMessage(["1000000000", i1]);
 
     worker.onmessage = event => {
         document.body.innerHTML = event.data[1];
